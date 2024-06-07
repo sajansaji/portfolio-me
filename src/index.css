@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
@@ -7,7 +13,6 @@
 .aboreto-regular {
   font-family: "Aboreto", system-ui;
 }
-
 
 .raleway {
   font-family: "Raleway", sans-serif;
@@ -189,6 +194,12 @@ button {
   z-index: -1
 }
 
+/* styles.css */
+.switcher-glow {
+  --x: 100%;
+}
+
+
 .switcher-fixed {
   margin: 0;
   position: fixed;
@@ -267,13 +278,22 @@ button {
 
 
 
-@media (460px <=width <=640px) {
-  .app-title {
-    font-size: 27.34px
+@media (min-width: 460px) and (max-width: 640px) {
+ .app-title {
+    font-size: 27.34px;
   }
 }
 
-@media (390px <=width <=460px) {
+@media (min-width: 390px) and (max-width: 460px) {
+ .app-title {
+    font-size: 24.61px;
+    letter-spacing: -2px;
+  }
+
+ .switcher {
+    transform: scale(.9);
+  }
+}
   .app-title {
     font-size: 24.61px;
     letter-spacing: -2px
@@ -282,15 +302,13 @@ button {
   .switcher {
     transform: scale(.9)
   }
-}
-
-@media (width <=390px) {
-  .app-title {
-    font-size: 21.88px
+@media (max-width: 390px) {
+ .app-title {
+    font-size: 21.88px;
   }
 
-  .switcher {
-    transform: scale(.8)
+ .switcher {
+    transform: scale(.8);
   }
 }
 
