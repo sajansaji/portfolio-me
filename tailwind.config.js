@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'aboreto-regular': ['"Aboreto"', 'system-ui'],
+        'name': ['"Aboreto-Regular"', 'system-ui'],
         'raleway': ['"Raleway"', 'sans-serif'],
         'fredoka': ['"Fredoka"', 'sans-serif'],
         'inter': ['"Inter"', 'sans-serif'],

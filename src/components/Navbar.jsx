@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
         <header className="header" id="home">
             <div className="app-title">
-                <h1 className="text-4xl">SAJAN SAJI</h1>
+                <h1 className="text-4xl font-name">SAJAN SAJI</h1>
             </div>
             <div className="start h-12" />
 
