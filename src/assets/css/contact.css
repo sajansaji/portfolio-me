@@ -4,12 +4,49 @@
     border: 2px dashed;
     color: azure;
     border-radius: 20px;    
-    margin-right: 150px; 
-    margin-left: 150px; 
+    /* margin-right: 150px; 
+    margin-left: 150px;  */
     padding: 50px;
 
     }
 
-    @media (min-width: 390px) and (max-width: 460px) {
-        padding: 2px;
+
+    @media screen and (min-width: 768px) {
+        //For Laptops
+            .con {
+                    margin-right: 150px; 
+                    margin-left: 150px; 
+            }
+        }
+        
+        @media screen and (min-width: 992px) {
+        //For Large Laptops
+        .con {
+            margin-right: 150px; 
+            margin-left: 150px; 
+        }
     }
+        
+        @media screen and (min-width: 1280px) {
+        
+        .con {
+            margin-right: 150px; 
+            margin-left: 150px; 
+        }
+    }
+        
+        
+        @media screen and (min-width: 1920px) {
+        //For Projectors or Higher Resolution Screens (Full HD)
+        .con {
+            margin-right: 150px; 
+            margin-left: 150px; 
+        }
+        }
+        @media screen and (min-width: 3840px) {
+        //For 4K Displays (Ultra HD)
+        .con {
+            margin-right: 150px; 
+            margin-left: 150px; 
+    }
+        }
