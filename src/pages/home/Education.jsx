@@ -1,12 +1,13 @@
 import React from 'react'
+import '@/assets/css/shadow.css'
 
 const Education = () => {
     return (
-        <section id="edu" className="pt-24 ">
-            <h1 className="font-bold text-xl text-gray-300 pl-24 pb-16 font-name">
+        <section id="edu" className="pt-24  ">
+            <h1 className="font-bold text-xl text-gray-300 text-center pb-16 font-name">
                 Education
             </h1>
-            <div className="border-dotted  font-fre border-4 border-gray-600 rounded-3xl lg:mx-48 pb-10  sm:m-2" >
+            <div className="border-dotted shad font-fre border-4 border-gray-600 rounded-3xl lg:mx-48 pb-10  sm:m-2" >
                 {/* <!-- B.Tech --> */}
                 <div className="text-gray-600 justify-between pl-5 pt-5 pr-5 ">
                     <div className='flex justify-between pb-3'>
