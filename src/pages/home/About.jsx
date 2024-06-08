@@ -9,7 +9,7 @@ const About = () => {
       <h1 className="font-name text-center " style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '10px' }}>
         About
       </h1>
-      <p className="font-fre shad sm:ml-48 sm:mr-48 " style={{
+      <p className="font-fre shad sm:ml-48 sm:mr-48 mx-4 " style={{
         color: '#999',
         textAlign: 'justify',
         paddingLeft: '20px',
