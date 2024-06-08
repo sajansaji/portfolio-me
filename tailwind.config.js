@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         'name': ['"Aboreto-Regular"', 'system-ui'],
         'raleway': ['"Raleway"', 'sans-serif'],
-        'fre': ['"Fredoka"', 'sans-serif'],
+        'fre': ['"Fredoka-Regular"', 'sans-serif'],
         'inter': ['"Inter"', 'sans-serif'],
       },
       colors: {
