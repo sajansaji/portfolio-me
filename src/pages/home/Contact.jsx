@@ -1,6 +1,7 @@
 import React from 'react'
 import '@/assets/css/contact.css'
-import { Mail } from 'lucide-react';
+import { Instagram, Mail, Phone, Linkedin, Facebook, Github, Twitter } from 'lucide-react';
+
 
 const Contact = () => {
   return (
@@ -27,14 +28,27 @@ const Contact = () => {
       </div>
       <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
    </form>
-   <div className=' items-center content-center  flex  '>
+   <div className=' content-center pl-24 '>
    <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-      <a href="mailto:sajansaji2002@gmail.com" className="hover:underline">
+      <a href="mailto:sajansaji2002@gmail.com" className="hover:underline flex">
       <Mail />
+      &nbsp;
         sajansaji2002@gmail.com</a>
    </p>
-   <p className="text-sm text-gray-500 dark:text-gray-400">Contact Number : 
-      <a href="#" className="hover:underline"> +91 9207118784</a>
+   <p className="text-sm text-gray-500 dark:text-gray-400 flex ">
+    <Phone /> &nbsp;
+      <a href="#" className="hover:underline">  +91 9207118784</a>
+   </p>
+   <p className="text-sm text-gray-500 dark:text-gray-400 flex  mt-9">
+    
+      <span >  Social Media &nbsp;&nbsp;&nbsp; </span>
+      <div className='flex gap-4'>
+        <a href="#"><Linkedin /></a>
+        <a href="#"><Facebook /></a>
+        <a href="#"><Github /></a>
+        <a href="#"><Twitter /></a>
+        <a href="#"><Instagram /></a>
+      </div>
    </p>
    </div>
    

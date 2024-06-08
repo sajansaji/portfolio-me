@@ -26,7 +26,7 @@ const Navbar = () => {
 
             <div className={`switcher ${headerProps}`} id='nav'>
                 <div aria-hidden="true" className="switcher-stroke absolute"></div>
-                <div className="switcher-root">
+                <div className="switcher-root ">
                     <button className="switcher-btn btn-active" type="button" data-scroll-to="home">Home</button>
                     <button className="switcher-btn" type="button" data-scroll-to="about">About</button>
                     <button className="switcher-btn" type="button" data-scroll-to="edu">Education</button>

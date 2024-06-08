@@ -27,6 +27,10 @@
   font-family: 'Aboreto-Regular';
   src: url('./assets/fonts/Aboreto-Regular.ttf');
 }
+@font-face {
+  font-family: 'Fredoka-Regular';
+  src: url('./assets/fonts/Fredoka-Regular.ttf');
+}
 
 :root {
   --sans: "Inter", sans-serif, -apple-system, ui-sans-serif, system-ui, blinkmacsystemfont, sego ui, roboto, helvetica neue, arial, noto sans, sans-serif, monospace;
