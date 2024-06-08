@@ -23,12 +23,12 @@ const Navbar = () => {
             <div className="app-title">
                 <h1 className="lg:text-7xl  font-name ">SAJAN SAJI</h1>
             </div>
-            <div className="start h-12" />
+            <div className="start h-12 " />
 
-            <div className={`switcher ${headerProps}`} id='nav'>
+            <div className={`switcher  ${headerProps}`} id='nav'>
                 <div aria-hidden="true" className="switcher-stroke absolute"></div>
-                <div className="switcher-root ">
-                    <button className="switcher-btn btn-active" type="button" data-scroll-to="home">Home</button>
+                <div className="switcher-root  ">
+                    <button className="switcher-btn btn-active  " type="button" data-scroll-to="home">Home</button>
                     <button className="switcher-btn" type="button" data-scroll-to="about">About</button>
                     <button className="switcher-btn" type="button" data-scroll-to="edu">Education</button>
                     <button className="switcher-btn" type="button" data-scroll-to="project">Project</button>

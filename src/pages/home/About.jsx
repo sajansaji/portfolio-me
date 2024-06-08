@@ -8,7 +8,7 @@ const About = () => {
       <h1 className="font-name  " style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
         About
       </h1>
-      <p className="fredoka sm:ml-48 sm:mr-48 " style={{
+      <p className="font-fre sm:ml-48 sm:mr-48 " style={{
         color: '#999',
         textAlign: 'justify',
         paddingLeft: '20px',
