@@ -4,12 +4,12 @@ import '@/assets/css/shadow.css'
 const Education = () => {
     return (
         <section id="edu" className="pt-24  ">
-            <h1 className="font-bold text-xl text-gray-300 text-center pb-16 font-name">
+            <h1 className="font-bold text-xl text-[#999] text-center pb-16 font-name">
                 Education
             </h1>
-            <div className="border-dotted shad font-fre border-4 border-gray-600 rounded-3xl lg:mx-48 pb-10  sm:m-2" >
+            <div className="border-dotted shad font-fre border-4 border-[#999] rounded-3xl lg:mx-48 pb-10  sm:m-2" >
                 {/* <!-- B.Tech --> */}
-                <div className="text-gray-600  justify-between pl-5 pt-5 pr-5 ">
+                <div className="text-[#999] justify-between pl-5 pt-5 pr-5 ">
                     <div className='flex justify-between pb-3'>
                         <h3 className="underline">B.Tech Computer Science</h3>
                         <span>2020 - 2024</span>
@@ -26,7 +26,7 @@ const Education = () => {
                     </p>
                 </div>
                 {/* <!-- Higher Secondary Education --> */}
-                <div className="text-gray-600 justify-between pl-5 pt-5 pr-5">
+                <div className="text-[#999] justify-between pl-5 pt-5 pr-5">
                     <div className='flex justify-between pb-3'>
                         <h3 className="underline">Higher Secondary Education</h3>
                         <span>2018 - 2020</span>
@@ -40,7 +40,7 @@ const Education = () => {
                     </p>
                 </div>
                 {/* <!-- Secondary Education --> */}
-                <div className="text-gray-600 justify-between pl-5 pt-5 pr-5">
+                <div className="text-[#999] justify-between pl-5 pt-5 pr-5">
                     <div className='flex justify-between pb-3'>
                         <h3 className="underline">Secondary Education</h3>
                         <span>2018</span>
