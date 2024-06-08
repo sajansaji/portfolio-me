@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../utils/navbar';
 
+
 const Navbar = () => {
 
     const [headerProps, setHeaderProps] = useState('fixed top-[45vh]');
@@ -20,7 +21,7 @@ const Navbar = () => {
     return (
         <header className="header" id="home">
             <div className="app-title">
-                <h1 className="text-4xl font-name">SAJAN SAJI</h1>
+                <h1 className="lg:text-7xl  font-name ">SAJAN SAJI</h1>
             </div>
             <div className="start h-12" />
 

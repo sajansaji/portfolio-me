@@ -7,14 +7,14 @@ const Contact = () => {
   return (
     <div>
 
-      <h1 className="font-name mb-5 mt-16" id='contact' style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
+      <h1 className="font-name mb-5 lg:pl-5 mt-16" id='contact' style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
         Contact
     </h1>
     <div className='con '>
 <div  className="  z-40 flex " tabindex="-1" aria-labelledby="drawer-contact-label ">
 
-   <form className="mb-6 w-72">
-      <div className="mb-6 ">
+   <form className="lg:mb-2 w-72">
+      <div >
          <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
          <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="mail@gmail.com" required />
       </div>
