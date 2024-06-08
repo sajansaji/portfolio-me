@@ -6,10 +6,10 @@ const Projects = () => {
             <h1 className="font-bold text-center text-[#999] text-lg font-name">Project</h1>
             {/* <!-- Project 1 --> */}
             <div className='border-dotted mx-4 shad border-4 border-[#999] rounded-3xl lg:mx-48 pb-10 mt-10  text-justify'>
-            <h3 className="mt-6 mb-2 text-[#999] text-lg lg:px-12 px-4 ">
+            <h3 className="mt-6 mb-2 text-[#999] text-lg lg:px-8 px-7 ">
                 <u>Concisely</u>
             </h3>
-            <div className="text-[#999] lg:px-16 px-7  ">
+            <div className="text-[#999] lg:pl-12 lg:pr-6 px-10  ">
                 <ul className="list-disc">
                     <li className="pb-2">Developed a responsive web application using Python and Node.js serving a custom API with React as the frontend.</li>
                     <li className="pb-2">Optical Character Recognition (OCR) is successfully implemented to read text from images for summarization.</li>
@@ -17,10 +17,10 @@ const Projects = () => {
                 </ul>
             </div>
             {/* <!-- Project 2 --> */}
-            <h3 className="mt-6 mb-2 text-[#999] text-lg lg:px-12 px-7">
+            <h3 className="mt-6 mb-2 text-[#999] text-lg lg:px-8 px-7">
                 <u>VisionX</u>
             </h3>
-            <div className="text-[#999] lg:px-16 px-7">
+            <div className="text-[#999] lg:pl-12 lg:pr-6 px-10">
                 <ul className="list-disc">
                     <li className="pb-2">Visitor management system that has OCR integrated for ease of visitor check-in.</li>
                     <li className="pb-2">The admin can securely access the system by authenticating with their assigned username and password.</li>
