@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section id="about" style={{ paddingTop: '90px' }}>
-    <h1 className="aboreto-regular" style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
+    <h1 className="font-name" style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
         About
     </h1>
     <p className="fredoka" style={{

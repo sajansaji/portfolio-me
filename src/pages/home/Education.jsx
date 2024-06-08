@@ -3,7 +3,7 @@ import React from 'react'
 const Education = () => {
     return (
         <section id="edu" class="pt-24">
-            <h1 class="font-bold text-xl text-gray-300 pl-24 pb-16">
+            <h1 class="font-bold text-xl text-gray-300 pl-24 pb-16 font-name">
                 Education
             </h1>
             <div class="border-dotted border-4 border-gray-600 rounded-3xl mx-48 pb-10">
