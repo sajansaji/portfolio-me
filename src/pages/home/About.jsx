@@ -6,7 +6,7 @@ import '@/assets/css/shadow.css'
 const About = () => {
   return (
     <section id="about" style={{ paddingTop: '90px' }}>
-      <h1 className="font-name text-center " style={{ color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '10px' }}>
+      <h1 className="font-name text-center " style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '10px' }}>
         About
       </h1>
       <p className="font-fre shad sm:ml-48 sm:mr-48 " style={{
