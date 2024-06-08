@@ -1,6 +1,6 @@
 import React from 'react'
 import '@/assets/css/contact.css'
-// import TextField from '@mui/material/TextField';
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -27,9 +27,11 @@ const Contact = () => {
       </div>
       <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
    </form>
-   <div className=' items-center content-center '>
+   <div className=' items-center content-center  flex  '>
    <p className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-      <a href="mailto:sajansaji2002@gmail.com" className="hover:underline">sajansaji2002@gmail.com</a>
+      <a href="mailto:sajansaji2002@gmail.com" className="hover:underline">
+      <Mail />
+        sajansaji2002@gmail.com</a>
    </p>
    <p className="text-sm text-gray-500 dark:text-gray-400">Contact Number : 
       <a href="#" className="hover:underline"> +91 9207118784</a>
