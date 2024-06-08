@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about " style={{ paddingTop: '90px' }}>
+    <section id="about" style={{ paddingTop: '90px' }}>
       <h1 className="font-name  " style={{ paddingLeft: '100px', color: '#eaeaea', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
         About
       </h1>
@@ -21,7 +21,8 @@ const About = () => {
         // marginRight: '200px',
         marginTop: '50px',
         paddingTop: '20px',
-        paddingBottom: '20px'
+        paddingBottom: '20px',
+        
       }}>
         I am a dedicated computer science student pursuing a B.Tech degree, with a strong focus on web development and
         React. Through college projects, I have honed my skills in building dynamic and responsive web applications
