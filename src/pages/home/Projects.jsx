@@ -5,7 +5,7 @@ const Projects = () => {
         <section id="project" className="pt-24 font-fre">
             <h1 className="font-bold text-center text-[#999] text-lg font-name">Project</h1>
             {/* <!-- Project 1 --> */}
-            <div className='border-dotted shad border-4 border-[#999] rounded-3xl lg:mx-48 pb-10 mt-20  text-justify'>
+            <div className='border-dotted shad border-4 border-[#999] rounded-3xl lg:mx-48 pb-10 mt-10  text-justify'>
             <h3 className="mt-6 mb-2 text-[#999] text-lg pl-12 ">
                 <u>Concisely</u>
             </h3>

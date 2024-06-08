@@ -4,7 +4,7 @@ import '@/assets/css/shadow.css'
 const Education = () => {
     return (
         <section id="edu" className="pt-24  ">
-            <h1 className="font-bold text-xl text-[#999] text-center pb-16 font-name">
+            <h1 className="font-bold text-xl text-[#999] text-center pb-10 font-name">
                 Education
             </h1>
             <div className="border-dotted shad font-fre border-4 border-[#999] rounded-3xl lg:mx-48 pb-10  sm:m-2" >
