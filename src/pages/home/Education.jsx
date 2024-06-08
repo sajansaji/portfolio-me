@@ -9,7 +9,7 @@ const Education = () => {
             </h1>
             <div className="border-dotted shad font-fre border-4 border-gray-600 rounded-3xl lg:mx-48 pb-10  sm:m-2" >
                 {/* <!-- B.Tech --> */}
-                <div className="text-gray-600 justify-between pl-5 pt-5 pr-5 ">
+                <div className="text-gray-600  justify-between pl-5 pt-5 pr-5 ">
                     <div className='flex justify-between pb-3'>
                         <h3 className="underline">B.Tech Computer Science</h3>
                         <span>2020 - 2024</span>
