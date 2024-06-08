@@ -1,7 +1,7 @@
 .con {
     backdrop-filter: blur(30px);
     /* box-shadow:0 0 30px rgba(227, 228, 237, 0.37); */
-    border: 2px dotted;
+    border: 2px dashed;
     color: azure;
     border-radius: 20px;    
     margin-right: 150px; 
