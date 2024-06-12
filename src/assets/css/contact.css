@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 600px) {
     .form {
-        width: 530px;
+        width: 480px;
 
     }
     .mar {
@@ -65,7 +65,7 @@
             margin-left: 150px; 
         }
         .form {
-            width: 1120px;
+            width: 990px;
         }
     }
         
