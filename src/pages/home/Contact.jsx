@@ -47,7 +47,7 @@ const Contact = () => {
 
                      <p className=' '>  Social Media  </p>
                      <div className='flex gap-4 pt-3  '>
-                        <a href="www.linkedin.com/in/sajansaji" className='hover:text-blue-400'><Linkedin /></a>
+                        <a href="https://www.linkedin.com/in/sajansaji" className='hover:text-blue-400'><Linkedin /></a>
                         <a href="https://www.facebook.com/iamsajansaji/" className='hover:text-blue-700'><Facebook /></a>
                         <a href="https://github.com/sajansaji" className='hover:text-white'><Github /></a>
                         <a href="https://x.com/iamsajansaji" className='hover:text-blue-600'><Twitter /></a>
