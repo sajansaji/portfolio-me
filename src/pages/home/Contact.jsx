@@ -3,7 +3,9 @@ import '@/assets/css/contact.css'
 import { Instagram, Mail, Phone, Linkedin, Facebook, Github, Twitter } from 'lucide-react';
 
 
+
 const Contact = () => {
+   // const EMAIL=process.env.EMAIL;
    const onSubmit = async (event) => {
       event.preventDefault();
       const formData = new FormData(event.target);
