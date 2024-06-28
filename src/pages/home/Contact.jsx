@@ -1,6 +1,9 @@
 import React from 'react'
 import '@/assets/css/contact.css'
 import { Instagram, Mail, Phone, Linkedin, Facebook, Github, Twitter } from 'lucide-react';
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast.success('Successfully sended!');
 
 const Contact = () => {
    // const EMAIL=process.env.EMAIL;
@@ -50,7 +53,8 @@ const Contact = () => {
                      <textarea id="message" name='message' rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
                   </div>
                   <div className='mar mb-12 mr-36'>
-                     <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
+                     <button type="submit" onClick={notify} className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
+                     <Toaster position="bottom-center"/>
                   </div>
                </form>
                <aside className=' content-center  flex flex-wrap  justify-between  '>
