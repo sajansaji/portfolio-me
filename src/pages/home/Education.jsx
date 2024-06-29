@@ -15,15 +15,12 @@ const Education = () => {
                         <span className='lg:pr-5'>2020 - 2024</span>
                     </div>
 
-                    <span className="lg:pl-5 ">
+                    <div className="px-5">
                         APJ Abdul Kalam Technological University <br />
                         Marian Engineering College, Kazhakootam <br />
-                        CGPA: 7.49
-                        <br />
-                        <p className='text-justify lg:pr-5'>
+                        CGPA: 7.49<br />
                         Relevant Courses: Data Structure, Logic System Design, Java, Database Management Systems, Operating System, Computer Networks, Compiler Design, Distributed Computing, Mobile Computing, Soft Computing.
-                        </p>
-                    </span>
+                    </div>
                 </div>
                 {/* <!-- Higher Secondary Education --> */}
                 <div className="text-[#999] justify-between pt-5 pr-5 px-2 ">
