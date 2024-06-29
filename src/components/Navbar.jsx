@@ -1,6 +1,4 @@
-
 import '../../utils/navbar';
-
 
 const Navbar = () => {
 
