@@ -2,27 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* global.css */
-
-/* @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-
-.aboreto-regular {
-  font-family: "Aboreto", system-ui;
-}
-
-.raleway {
-  font-family: "Raleway", sans-serif;
-}
-
-.fredoka {
-  font-family: "Fredoka", sans-serif;
-} */
-
-
 @font-face {
   font-family: 'Aboreto-Regular';
   src: url('./assets/fonts/Aboreto-Regular.ttf');

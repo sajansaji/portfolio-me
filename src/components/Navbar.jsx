@@ -1,10 +1,8 @@
-import { useEffect, useState } from 'react';
+
 import '../../utils/navbar';
 
 
 const Navbar = () => {
-
-    const [headerProps, setHeaderProps] = useState('fixed top-[45vh]');
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
@@ -25,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className="start h-12 " />
 
-            <div className={`switcher  ${headerProps}`} id='nav'>
+            <div className='switcher fixed top-[45vh]' id='nav'>
                 <div aria-hidden="true" className="switcher-stroke absolute"></div>
                 <div className="switcher-root  ">
                     <button className="switcher-btn btn-active  " type="button" data-scroll-to="home">Home</button>
