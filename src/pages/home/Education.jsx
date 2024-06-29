@@ -15,7 +15,7 @@ const Education = () => {
                         <span className='lg:pr-5'>2020 - 2024</span>
                     </div>
 
-                    <div className="px-5">
+                    <div className="lg:px-5">
                         APJ Abdul Kalam Technological University <br />
                         Marian Engineering College, Kazhakootam <br />
                         CGPA: 7.49<br />
