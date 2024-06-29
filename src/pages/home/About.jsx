@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '@/assets/css/shadow.css'
 
 
@@ -35,8 +35,8 @@ const About = () => {
         development to create impactful solutions. In my free time, I participate in coding challenges and
         contribute to open-source projects.
         <br /><br />
-        Explore my portfolio to gain insights into my projects and experiences. I'm excited about the opportunities
-        that lie ahead and look forward to discussing how I can contribute to your organization's success.
+        Explore my portfolio to gain insights into my projects and experiences. I&apos;m excited about the opportunities
+        that lie ahead and look forward to discussing how I can contribute to your organization&apos;s success.
       </p>
     </section>
 

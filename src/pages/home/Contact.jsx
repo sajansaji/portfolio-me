@@ -1,31 +1,51 @@
-import React from 'react'
+
 import '@/assets/css/contact.css'
 import { Instagram, Mail, Phone, Linkedin, Facebook, Github, Twitter } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 
-const notify = () => toast.success('Successfully sended!');
+
 
 const Contact = () => {
-   // const EMAIL=process.env.EMAIL;
+
    const onSubmit = async (event) => {
       event.preventDefault();
       const formData = new FormData(event.target);
-      formData.append("access_key", "c71adfa8-dbd5-4d18-990b-0ca49f365938");
 
-      const object = Object.fromEntries(formData);
-      const json = JSON.stringify(object);
+      const payload = {
+         embeds: [
+            {
+               title: 'New Web Message',
+               description: formData.get('message'),
+               color: 3447003,
+               fields: [
+                  {
+                     name: 'Email',
+                     value: formData.get('email'),
+                  },
+                  {
+                     name: 'Message',
+                     value: formData.get('subject')
+                  }
+               ],
+            },
+         ],
+      };
 
-      const res = await fetch("https://api.web3forms.com/submit", {
-         method: "POST",
-         headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json"
-         },
-         body: json
-      }).then((res) => res.json());
+      try {
+         const response = await fetch('https://discord.com/api/webhooks/1256467135572738049/lfX0bkFClfk8Ve-XSB4yX5dSgmB_DFc6zSXn9K4-gjYYTdeDjrDOmZsZWz61i5YPHPpC', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload),
+         });
 
-      if (res.success) {
-         console.log("Success", res);
+         if (!response.ok) {
+            throw new Error('Failed to send message');
+         }
+         toast.success('Message sent successfully!');
+      } catch (error) {
+         toast.error('Failed to send message. Please try again later.');
       }
    };
    return (
@@ -41,20 +61,20 @@ const Contact = () => {
                <form className="form " onSubmit={onSubmit}>
                   <input type="hidden" name="access_key" value="c71adfa8-dbd5-4d18-990b-0ca49f365938" />
                   <div className="mb-6 mar mr-36 ">
-                     <label for="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
+                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                      <input type="email" name='email' id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="mail@gmail.com" required />
                   </div>
                   <div className="mb-6 mar mr-36">
-                     <label for="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                     <label htmlFor="subject" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
                      <input type="text" name='subject' id="subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let me know.." required />
                   </div>
                   <div className="mb-6 mar mr-36">
-                     <label for="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                     <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
                      <textarea id="message" name='message' rows="4" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
                   </div>
                   <div className='mar mb-12 mr-36'>
-                     <button type="submit" onClick={notify} className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
-                     <Toaster position="bottom-center"/>
+                     <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 w-full focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 block">Send message</button>
+                     <Toaster position="bottom-center" />
                   </div>
                </form>
                <aside className=' content-center  flex flex-wrap  justify-between  '>
@@ -69,7 +89,7 @@ const Contact = () => {
                      <a href="#" className="hover:underline hover:text-white">
                         +91 9207118784</a>
                   </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-9">
+                  <span className="text-sm text-gray-500 dark:text-gray-400 mt-9">
 
                      <p>  Social Media  </p>
                      <div className='flex gap-4 pt-3  '>
@@ -79,7 +99,7 @@ const Contact = () => {
                         <a href="https://x.com/iamsajansaji" className='hover:text-blue-600'><Twitter /></a>
                         <a href="https://www.instagram.com/iamsajansaji/" className='hover:text-pink-500'><Instagram /></a>
                      </div>
-                  </p>
+                  </span>
                </aside>
 
             </div>

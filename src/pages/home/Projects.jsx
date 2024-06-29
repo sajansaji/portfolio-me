@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '@/assets/css/shadow.css'
 const Projects = () => {
     return (
@@ -13,7 +13,7 @@ const Projects = () => {
                 <ul className="list-disc">
                     <li className="pb-2">Developed a responsive web application using Python and Node.js serving a custom API with React as the frontend.</li>
                     <li className="pb-2">Optical Character Recognition (OCR) is successfully implemented to read text from images for summarization.</li>
-                    <li>Can translate summaries to the user's preferred language and has accessibility features.</li>
+                    <li>Can translate summaries to the user&apos;s preferred language and has accessibility features.</li>
                 </ul>
             </div>
             {/* <!-- Project 2 --> */}

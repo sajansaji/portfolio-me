@@ -1,4 +1,4 @@
-import React from 'react'
+
 import '@/assets/css/shadow.css'
 
 const Education = () => {
@@ -15,7 +15,7 @@ const Education = () => {
                         <span className='lg:pr-5'>2020 - 2024</span>
                     </div>
 
-                    <p className="lg:pl-5 ">
+                    <span className="lg:pl-5 ">
                         APJ Abdul Kalam Technological University <br />
                         Marian Engineering College, Kazhakootam <br />
                         CGPA: 7.49
@@ -23,7 +23,7 @@ const Education = () => {
                         <p className='text-justify lg:pr-5'>
                         Relevant Courses: Data Structure, Logic System Design, Java, Database Management Systems, Operating System, Computer Networks, Compiler Design, Distributed Computing, Mobile Computing, Soft Computing.
                         </p>
-                    </p>
+                    </span>
                 </div>
                 {/* <!-- Higher Secondary Education --> */}
                 <div className="text-[#999] justify-between pt-5 pr-5 px-2 ">
