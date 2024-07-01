@@ -25,7 +25,7 @@ const About = () => {
         paddingBottom: '20px',
         
       }}>
-        I am a dedicated computer science student pursuing a B.Tech degree, with a strong focus on web development and
+        I am a dedicated computer science student completed my B.Tech degree in computer science and engineering, with a strong focus on web development and
         React. Through college projects, I have honed my skills in building dynamic and responsive web applications
         using React, showcasing my ability to create engaging user experiences.
         Constantly seeking growth, I stay updated with the latest industry trends and explore new technologies. I
