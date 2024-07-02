@@ -38,6 +38,15 @@ export default {
       spacing: {
         '9.5': '23.75px',
         '12.5': '50px',
+      },
+      screens: {
+        'mobile-portrait': '320px',
+        'mobile-landscape': '481px',
+        'tablet-portrait': '768px',
+        'tablet-landscape': '1025px',
+        'desktop-small': '1280px',
+        'desktop-medium': '1367px',
+        'desktop-large': '1441px',
       }
     },
   },
