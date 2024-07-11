@@ -18,7 +18,7 @@ const Education = () => {
                     <div className="lg:px-5">
                         APJ Abdul Kalam Technological University <br />
                         Marian Engineering College, Kazhakootam <br />
-                        CGPA: 7.49<br />
+                        CGPA: 7.46<br />
                         Relevant Courses: Data Structure, Logic System Design, Java, Database Management Systems, Operating System, Computer Networks, Compiler Design, Distributed Computing, Mobile Computing, Soft Computing.
                     </div>
                 </div>
