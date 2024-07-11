@@ -60,7 +60,7 @@ const Contact = () => {
             <div className=" z-40 flex flex-col" aria-labelledby="drawer-contact-label ">
 
                <form className="form " onSubmit={onSubmit}>
-                  <div className="mb-6 mar mr-36 mobile-portrait:w-[280px] tablet-portrait:w-[450px] desktop-small:w-[700px] desktop-medium:w-[800px] desktop-large:w-[870px]">
+                  <div className="mb-6 mar mr-36 mobile-portrait:w-[280px] tablet-portrait:w-[450px] desktop-small:w-[700px] desktop-medium:w-[800px] desktop-large:w-[870px] desk:w-[1350px]">
                   
                      <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
                      <input type="email" name='email' id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-[#474747] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="mail@gmail.com" required />

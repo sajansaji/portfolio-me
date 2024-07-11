@@ -47,6 +47,7 @@ export default {
         'desktop-small': '1280px',
         'desktop-medium': '1367px',
         'desktop-large': '1441px',
+        'desk': '1920px'
       }
     },
   },
