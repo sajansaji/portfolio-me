@@ -1,30 +1,38 @@
+import React, { useEffect } from 'react';
 import '../../utils/navbar';
 
 const Navbar = () => {
 
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-            const nav = document.getElementById('nav')
-            nav.classList.add('sticky')
-            nav.classList.remove('fixed top-[50vh]')
-        } else {
-            const nav = document.getElementById('nav')
-            nav.classList.add('fixed')
-            nav.classList.remove('sticky top-[50vh]')
-        }
-    })
+    useEffect(() => {
+        const handleScroll = () => {
+            const nav = document.getElementById('nav');
+            if (window.scrollY > 500) {
+                nav.classList.add('sticky');
+                nav.classList.remove('fixed', 'top-[50vh]');
+            } else {
+                nav.classList.add('fixed');
+                nav.classList.remove('sticky', 'top-[50vh]');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <header className="header" id="home">
             <div className="app-title">
-                <h1 className="lg:text-7xl  font-name ">SAJAN SAJI</h1>
+                <h1 className="text-6xl lg:text-7xl font-name">SAJAN SAJI</h1>
             </div>
-            <div className="start h-12 " />
+            <div className="start h-12" />
 
-            <div className='switcher fixed top-[45vh]' id='nav'>
+            <div className='switcher fixed top-[45vh] hidden md:block' id='nav'>
                 <div aria-hidden="true" className="switcher-stroke absolute"></div>
-                <div className="switcher-root  ">
-                    <button className="switcher-btn btn-active  " type="button" data-scroll-to="home">Home</button>
+                <div className="switcher-root">
+                    <button className="switcher-btn btn-active" type="button" data-scroll-to="home">Home</button>
                     <button className="switcher-btn" type="button" data-scroll-to="about">About</button>
                     <button className="switcher-btn" type="button" data-scroll-to="edu">Education</button>
                     <button className="switcher-btn" type="button" data-scroll-to="project">Project</button>
@@ -35,7 +43,7 @@ const Navbar = () => {
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

@@ -1,4 +1,4 @@
-"use strict"; // src/index.js
+"use strict";
 
 var BTN_ACTIVE_CLASS = "btn-active";
 var GLOW_LEFT_OFFSET = 19.75;
@@ -24,54 +24,37 @@ var calcSwitcher = (activeBtn, targetBtn) => {
     const multOffsetX = Math.round(sumOffsetX / switcherOffsetWidth * 100);
     switcher.style.setProperty("--x", `${100 - multOffsetX}%`);
     targetBtn.classList.add(BTN_ACTIVE_CLASS);
-    if (!activeBtn) return;
-    activeBtn.classList.remove(BTN_ACTIVE_CLASS);
+    if (activeBtn) activeBtn.classList.remove(BTN_ACTIVE_CLASS);
 };
 
 var handleSwitcher = (e) => {
-    const currentTarget = e.currentTarget;
-    const target = e.target;
-    const activeBtn = currentTarget.querySelector(`.${BTN_ACTIVE_CLASS}`);
-    const closestBtn = target.closest(".switcher-btn");
-    if (!closestBtn) return;
-    if (closestBtn === activeBtn) return;
-    calcSwitcher(activeBtn, closestBtn);
-    const targetSection = document.querySelector(`#${closestBtn.dataset.scrollTo}`);
+    const target = e.target.closest(".switcher-btn");
+    if (!target || target.classList.contains(BTN_ACTIVE_CLASS)) return;
+    const activeBtn = switcherRoot.querySelector(`.${BTN_ACTIVE_CLASS}`);
+    calcSwitcher(activeBtn, target);
+    const targetSection = document.querySelector(`#${target.dataset.scrollTo}`);
     window.scrollTo({
-        top: targetSection.id === "home" ? 0 : targetSection.offsetTop + 10,
+        top: targetSection.id === "home" ? 0 : targetSection.offsetTop,
         behavior: "smooth"
     });
 };
 
 var generateTops = () => {
-    const topsArray = [start.offsetTop];
-    for (const section of mainSections) {
-        topsArray.push(section.offsetTop + start.offsetTop);
-    }
-    return topsArray;
+    return [start.offsetTop, ...Array.from(mainSections).map(section => section.offsetTop + start.offsetTop)];
 };
 
 var switcherScroll = () => {
-    const startingTop = start.offsetTop;
-    const windowScrollY = Math.round(window.scrollY);
-    const switcherHeight = switcher.offsetHeight;
-    if (windowScrollY >= startingTop - 15) {
+    const windowScrollY = window.scrollY;
+    if (windowScrollY >= start.offsetTop - 15) {
         switcher.classList.add("switcher-fixed");
     } else {
         switcher.classList.remove("switcher-fixed");
     }
-    const currDiff = windowScrollY - startingTop - switcherHeight;
     const activeBtn = document.querySelector(`.${BTN_ACTIVE_CLASS}`);
-    let currSection = 0;
-    for (let i = 0; i < tops.length; i++) {
-        if (tops[i] > currDiff) {
-            currSection = i;
-            break;
-        }
-    }
+    let currSection = tops.findIndex(top => top > windowScrollY - start.offsetTop - switcher.offsetHeight);
+    if (currSection === -1) currSection = tops.length - 1;
     const targetBtn = switcherBtns[currSection];
-    if (activeBtn === targetBtn) return;
-    calcSwitcher(activeBtn, targetBtn);
+    if (activeBtn !== targetBtn) calcSwitcher(activeBtn, targetBtn);
 };
 
 var handleResize = () => {
