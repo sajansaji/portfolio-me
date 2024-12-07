@@ -24,9 +24,9 @@ const About = () => {
         paddingBottom: '20px',
         
       }}>
-
+      <p>
       I am a passionate and driven computer science professional, currently an intern at UST, where I am expanding my expertise in Android app development, Arduino, and Advanced Driver Assistance Systems (ADAS) using Texas Instruments boards. I have completed my B.Tech degree in Computer Science and Engineering.
-
+      </p>
       <br/><p> At UST, I am diving into the world of Android app development, working on Arduino projects, and exploring ADAS technologies. This hands-on experience is honing my technical skills and allowing me to collaborate with seasoned professionals on real-world projects. I am dedicated to continuous learning, staying updated with the latest industry trends, and exploring innovative technologies. I thrive in collaborative environments, where I can contribute my technical expertise, problem-solving abilities, and strong team spirit.
       </p>
       <p>
