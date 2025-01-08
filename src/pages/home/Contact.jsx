@@ -30,11 +30,11 @@ const Contact = () => {
                ],
             },
          ],
-         */
+         
       };
 
       try {
-         /*const response = await fetch('https://discord.com/api/webhooks/1256467135572738049/lfX0bkFClfk8Ve-XSB4yX5dSgmB_DFc6zSXn9K4-gjYYTdeDjrDOmZsZWz61i5YPHPpC', {
+         const response = await fetch('https://discord.com/api/webhooks/1256467135572738049/lfX0bkFClfk8Ve-XSB4yX5dSgmB_DFc6zSXn9K4-gjYYTdeDjrDOmZsZWz61i5YPHPpC', {
             method: 'POST',
             headers: {
                'Content-Type': 'application/json',
