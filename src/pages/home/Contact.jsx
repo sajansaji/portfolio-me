@@ -53,13 +53,13 @@ const Contact = () => {
    };
   
    return (
-      <div>
+    /*  <div>
 
       <h1 className="font-name  text-center mb-5  mt-10  " id='contact' style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
             Contact
          </h1>
          <div className='con sm:ml-48 sm:mr-48 font-fre mt-8'>
-            {/* mr-4 */}
+            
             <div className=" z-40 flex flex-col" aria-labelledby="drawer-contact-label ">
 
                <form className="form " onSubmit={onSubmit}>
@@ -112,6 +112,7 @@ const Contact = () => {
 
          </div>
       </div>
+      */
    )
 
 }
