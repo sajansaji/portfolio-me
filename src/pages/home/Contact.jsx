@@ -49,12 +49,13 @@ const Contact = () => {
       } catch (error) {
          toast.error('Failed to send message. Please try again later.');
       }
-      */
-   };
-   return (
+      
+   };*/
+  
+  // return (
       <div>
 
-         <h1 className="font-name  text-center mb-5  mt-10  " id='contact' style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
+      <h1 className="font-name  text-center mb-5  mt-10  " id='contact' style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
             Contact
          </h1>
          <div className='con sm:ml-48 sm:mr-48 font-fre mt-8'>
@@ -112,6 +113,7 @@ const Contact = () => {
          </div>
       </div>
    )
+
 }
 
 export default Contact
