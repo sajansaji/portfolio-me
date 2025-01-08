@@ -53,7 +53,7 @@ const Contact = () => {
    };
   
    return (
-    /*  <div>
+     <div>
 
       <h1 className="font-name  text-center mb-5  mt-10  " id='contact' style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
             Contact
@@ -112,7 +112,7 @@ const Contact = () => {
 
          </div>
       </div>
-      */
+      
    )
 
 }
