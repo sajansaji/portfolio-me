@@ -7,7 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
-  /* const onSubmit = async (event) => {
+   const onSubmit = async (event) => {
       event.preventDefault();
       const formData = new FormData(event.target);
 
@@ -50,9 +50,9 @@ const Contact = () => {
          toast.error('Failed to send message. Please try again later.');
       }
       
-   };*/
+   };
   
-  // return (
+   return (
       <div>
 
       <h1 className="font-name  text-center mb-5  mt-10  " id='contact' style={{ color: '#999', fontSize: 'larger', paddingTop: '60px', paddingBottom: '15px' }}>
