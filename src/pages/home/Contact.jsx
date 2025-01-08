@@ -7,7 +7,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
-   const onSubmit = async (event) => {
+  /* const onSubmit = async (event) => {
       event.preventDefault();
       const formData = new FormData(event.target);
 
@@ -30,6 +30,7 @@ const Contact = () => {
                ],
             },
          ],
+         */
       };
 
       try {
