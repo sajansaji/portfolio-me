@@ -6,10 +6,11 @@ import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
 
-    /* const onSubmit = async (event) => {
+     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
 
+        
         const payload = {
             content: '<@875589371590500425>',
             embeds: [
@@ -33,7 +34,7 @@ const Contact = () => {
         };
 
         try {
-            const response = await fetch('https://discord.com/api/webhooks/1256467135572738049/lfX0bkFClfk8Ve-XSB4yX5dSgmB_DFc6zSXn9K4-gjYYTdeDjrDOmZsZWz61i5YPHPpC', {
+            const response = await fetch('https://discordapp.com/api/webhooks/1327655781528637500/seCuj_95QAhZeArh4wr8Ju1r51mZoYIP1y5HgkshEZg0uwNcX5KQ5zfSxXuu84s-EB_l', {
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',
@@ -113,7 +114,7 @@ const Contact = () => {
     </div>
 
     )
-    */
+
 
 }
 
